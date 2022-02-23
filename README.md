@@ -40,9 +40,11 @@ into the Gilbert cell stage.
 # References:
 [1] B. Gilbert, “A high-performance monolithic multiplier using active
 feedback,” IEEE J. Solid-State Circuits, vol. SC-9, pp. 364-373, Dec.
-1974
+1974.
+
 [2] SHI-CAI QIN ANDRANDY L. GEIGER, A +-5-V CMOS Analog
 Multiplier, IEEE Journal of Solid State Circuits, vol SC-22, pp.1143–
-1146, Dec. 1987
+1146, Dec. 1987.
+
 [3] Razavi, Behzad. 2001. Design of analog CMOS integrated circuits.
 Boston, MA: McGraw-Hill.
