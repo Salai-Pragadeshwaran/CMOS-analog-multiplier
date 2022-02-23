@@ -84,7 +84,7 @@ This gain formula is valid even for fairly large voltage swings at the input.
 &emsp;The Synopsys 28nm Process Design Kit(PDK) was used in creation and simulation of the above designed circuit.
 
 <b>• Krita:</b></br>
-&emsp;Digital hand-drawn circuit diagram used for illustration were made using Krita graphics editor.
+&emsp;Digital hand-drawn circuit diagrams used for illustration were made using Krita graphics editor.
 
 # Author:
 • Salai Pragadeshwaran B, B.Tech(ECE), National Institute of Technology, Trichy-620015.
