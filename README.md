@@ -18,6 +18,11 @@ range of the signal swing by employing attenuating stages
 which reduce the input signal levels before giving the input
 into the Gilbert cell stage.
 
+# MOS Differential Pair:
+
+The circuit diagram of the MOS Differential Pair is shown in Fig. 1. The sum of the currents flowing through both MOSFETs is constant and equal to the tail current. Under Zero signal conditions, by symmetry half of the Tail current flows in each of the MOSFETs. With simple analysis it can be proven that when a differential input voltage signal is applied, the differential output current is represented by the equation: 
+![first equation]()
+
 # Tools Used:
 
 <b>• Synopsys Custom Compiler:</b></br>
