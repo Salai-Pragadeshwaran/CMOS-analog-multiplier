@@ -28,3 +28,21 @@ into the Gilbert cell stage.
 
 <b>• Synopsys 28nm PDK:</b></br>
 &emsp;The Synopsys 28nm Process Design Kit(PDK) was used in creation and simulation of the above designed circuit.
+
+# Author:
+• Salai Pragadeshwaran B, B.Tech(ECE), National Institute of Technology, Trichy-620015.
+
+# Acknowledgements:
+• <a href='https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/'>Cloud Based Analog IC Design Hackathon</a></br>
+• <a href='https://www.synopsys.com/'>Synopsys India</a></br>
+• <a href='https://www.vlsisystemdesign.com/'>VLSI System Design (VSD) Corp. Pvt. Ltd India</a></br>
+
+# References:
+[1] B. Gilbert, “A high-performance monolithic multiplier using active
+feedback,” IEEE J. Solid-State Circuits, vol. SC-9, pp. 364-373, Dec.
+1974
+[2] SHI-CAI QIN ANDRANDY L. GEIGER, A +-5-V CMOS Analog
+Multiplier, IEEE Journal of Solid State Circuits, vol SC-22, pp.1143–
+1146, Dec. 1987
+[3] Razavi, Behzad. 2001. Design of analog CMOS integrated circuits.
+Boston, MA: McGraw-Hill.
