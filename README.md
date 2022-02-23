@@ -20,7 +20,15 @@ into the Gilbert cell stage.
 
 # MOS Differential Pair:
 
-The circuit diagram of the MOS Differential Pair is shown in Fig. 1. The sum of the currents flowing through both MOSFETs is constant and equal to the tail current. Under Zero signal conditions, by symmetry half of the Tail current flows in each of the MOSFETs. With simple analysis it can be proven that when a differential input voltage signal is applied, the differential output current is represented by the equation: 
+The circuit diagram of the MOS Differential Pair is shown in Fig. 1. The sum of the currents flowing through both MOSFETs is constant and equal to the tail current. Under Zero signal conditions, by symmetry half of the Tail current flows in each of the MOSFETs.
+
+<p align="center">
+<img width="300"
+  src="images/mos_diff_pair_circuit.png"></br>
+  Fig. 1: MOS Differential Pair 
+</p>
+
+With simple analysis it can be proven that when a differential input voltage signal is applied, the differential output current is represented by the equation: 
 
 <p align="center">
   <img src="/latex/mos_diff_pair_2.png" />
@@ -48,9 +56,15 @@ The Gilbert cell uses Three of these differential
 pairs and two inputs to steer tail currents depending on the
 two inputs.
 
+<p align="center">
+<img width="400"
+  src="images/gilbert_cell_circuit.png"></br>
+  Fig. 2: MOS Gilbert Cell
+</p>
+
 # Attenuator:
 
-A PMOS transistor in the common source configuration with a diode connected NMOS transistor can be used either as an amplifier or attenuator by appropriately varying the device aspect ratio. The gain of the given configuration is:
+A PMOS transistor in the common source configuration with a diode connected NMOS transistor can be used either as an amplifier or attenuator by appropriately varying the device aspect ratio. The configuration is followed by a NMOS source follower. The gain of the given configuration is:
 
 <p align="center">
   <img src="/latex/att.png" />
