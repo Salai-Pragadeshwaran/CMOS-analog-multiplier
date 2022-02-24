@@ -12,6 +12,7 @@ This repository presents the design of Four-Quadrant CMOS Analog Multiplier base
  * [Tools Used](#Tools-Used)
  * [Pre-Layout Schematics and Simulations](#Pre-Layout-Schematics-and-Simulations)
  * [Netlist of the Circuit](#Netlist-of-the-Circuit)
+ * [Simulation](#Simulation)
  * [Observations](#Observations)
  * [Author](#Author)
  * [Acknowledgements](#Acknowledgements)
@@ -120,9 +121,74 @@ This gain formula is valid even for fairly large voltage swings at the input. Fo
 
 # Pre-Layout Schematics and Simulations:
 
+## Schematics:
+
+### Gilbert Cell:
+
+<p align="center">
+  <img width="600" src="images/gilbert_cell_schematic.png"></br>
+  Fig. 5: Gilbert Cell Schematic
+</p>
+<p align="center">
+  <img width="300" src="images/gilbert_cell_symbol.png"></br>
+  Fig. 6: Gilbert Cell Symbol
+</p>
+
+### Attenuator:
+
+<p align="center">
+  <img width="400" src="images/att_schematic.png"></br>
+  Fig. 7: Attenuator Schematic
+</p>
+<p align="center">
+  <img width="300" src="images/att_symbol.png"></br>
+  Fig. 8: Attenuator Symbol
+</p>
+
+### Multiplier:
+
+<p align="center">
+  <img src="images/multiplier_schematic.png"></br>
+  Fig. 9: Multiplier Schematic
+</p>
+<p align="center">
+  <img width="300" src="images/multiplier_symbol.png"></br>
+  Fig. 10: Multiplier Symbol
+</p>
+
+### Circuit for Testing:
+
+<p align="center">
+  <img src="images/testbench_schematic.png"></br>
+  Fig. 11: Schematic for the testbench
+</p>
+
 # Netlist of the Circuit:
 
+# Simulation:
+
+### Transient Analysis:
+After creating and saving the schematic go to 'Tools' and open 'Primewave' to start the simulation. In the Primewave select the 'model file' i.e the '28nm PDK's .lib file presentin the HSPICE folder. After this select the 'tran' analysis in the analysis window and give the 'Start', 'Stop', and 'Step Size' parameters and save it. Then add the outputs which needs to be plotted by selecting the nets on the schematic.</br>
+Two sine waves of different frequencies are being used as inputs. The output wave form is the multiplication of the two sine waves. This waveform can also be considered as Amplitude modulation - DSBSC (Dual side Band Suppressed Carrier).
+<p align="center">
+  <img src="images/tran1.png"></br>
+  Fig. 12: Multiplication of two Sine Waves.
+</p>
+<p align="center">
+  <img src="images/tran2.png"></br>
+  Fig. 13: Multiplication of two Sine Waves.
+</p>
+
+### Parametric Sweep:
+This is used to plot any output attribute over varying input attribute. Here, both the inputs are being varied from -1.5V to +1.5V and the outputs have been plotted.
+<p align="center">
+  <img src="images/transfer_char.png"></br>
+  Fig. 14: Transfer Characteristics of the Multiplier.
+</p>
+
 # Observations:
+
+The output is fairly linear with respect to both the inputs within the range -1V to +1V. The circuit functions as expected even with frequencies ranging in the order of Gigahertz.
 
 # Author:
 • Salai Pragadeshwaran B, B.Tech(ECE), National Institute of Technology, Trichy-620015.
