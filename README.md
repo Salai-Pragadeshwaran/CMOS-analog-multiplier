@@ -8,6 +8,7 @@ This repository presents the design of Four-Quadrant CMOS Analog Multiplier base
  * [MOS Differential Pair](#MOS-Differential-Pair)
  * [Gilbert Cell](#Gilbert-Cell)
  * [Attenuator](#Attenuator)
+ * [Circuit Diagram](#Circuit-Diagram)
  * [Tools Used](#Tools-Used)
  * [Pre-Layout Schematics and Simulations](#Pre-Layout-Schematics-and-Simulations)
  * [Netlist of the Circuit](#Netlist-of-the-Circuit)
@@ -94,6 +95,14 @@ The gain of the given configuration is:
 </p>
 
 This gain formula is valid even for fairly large voltage swings at the input. For attenuation, the denominator term must be greater than the numerator term and this can be achieved by making the aspect ratio of the NMOS device larger than that of the PMOS device.
+
+# Circuit Diagram:
+
+<p align="center">
+<img 
+  src="images/full_circuit.png"></br>
+  Fig. 4: Circuit Diagram
+</p>
 
 # Tools Used:
 
