@@ -3,6 +3,19 @@
 
 This repository presents the design of Four-Quadrant CMOS Analog Multiplier based on Gilbert Cell implemented using Synopsis Custom Compiler on 28nm CMOS Technology.
 
+# Table of Contents
+ * [Introduction](#Introduction)
+ * [MOS Differential Pair](#MOS-Differential-Pair)
+ * [Gilbert Cell](#Gilbert-Cell)
+ * [Attenuator](#Attenuator)
+ * [Tools Used](#Tools-Used)
+ * [Pre-Layout Schematics and Simulations](#Pre-Layout-Schematics-and-Simulations)
+ * [Netlist of the Circuit](#Netlist-of-the-Circuit)
+ * [Observations](#Observations)
+ * [Author](#Author)
+ * [Acknowledgements](#Acknowledgements)
+ * [References](#References)
+
 # Introduction:
 
 Bipolar version of the Gilbert cell [1] has been
@@ -95,6 +108,12 @@ This gain formula is valid even for fairly large voltage swings at the input. Fo
 
 <b>• Krita:</b></br>
 &emsp;Digital hand-drawn circuit diagrams used for illustration were made using Krita graphics editor.
+
+# Pre-Layout Schematics and Simulations:
+
+# Netlist of the Circuit:
+
+# Observations:
 
 # Author:
 • Salai Pragadeshwaran B, B.Tech(ECE), National Institute of Technology, Trichy-620015.
