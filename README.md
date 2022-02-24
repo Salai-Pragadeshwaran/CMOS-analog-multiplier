@@ -1,7 +1,7 @@
 
 # Four-Quadrant CMOS Analog Multiplier
 
-This repository presents the design of Four-Quadrant CMOS Analog Multiplier based on Gilbert Cell implemented using Synopsis Custom Compiler on 28nm CMOS Technology.
+This repository presents the design of Four-Quadrant CMOS Analog Multiplier based on Gilbert Cell implemented using Synopsis Custom Compiler on 28nm CMOS Technology as a part of <a href='https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/'>Cloud Based Analog IC Design Hackathon</a>.
 
 # Table of Contents
  * [Introduction](#Introduction)
@@ -28,7 +28,7 @@ signals. This is because the output current of the MOS
 differential pair depends non-linearly on the tail bias current
 and the input signal. The MOS analog multiplier is however
 an extremely useful circuit in integrated VLSI systems. In
-this paper an attempt has been made to increase the input
+this design an attempt has been made to increase the input
 range of the signal swing by employing attenuating stages
 which reduce the input signal levels before giving the input
 into the Gilbert cell stage.
@@ -159,7 +159,7 @@ The transistors in the schematic shown in Fig. 9 work as current mirrors and pro
 </p>
 
 ## Circuit for Testing:
-Two of the resistors are used in converting the output differential current into differential voltage. The other resistor is used to set the bias current for the circuit.
+Two of the resistors are used in converting the output differential current into differential voltage. The other resistor is used to set the bias currents for the circuit.
 <p align="center">
   <img src="images/testbench_schematic.png"></br>
   Fig. 11: Schematic for the testbench
@@ -168,7 +168,6 @@ Two of the resistors are used in converting the output differential current into
 # Simulation:
 
 ## Transient Analysis:
-After creating and saving the schematic go to 'Tools' and open 'Primewave' to start the simulation. In the Primewave select the 'model file' i.e the '28nm PDK's .lib file presentin the HSPICE folder. After this select the 'tran' analysis in the analysis window and give the 'Start', 'Stop', and 'Step Size' parameters and save it. Then add the outputs which needs to be plotted by selecting the nets on the schematic.</br>
 Two sine waves of different frequencies are being used as inputs. The output wave form is the multiplication of the two sine waves. This waveform can also be considered as Amplitude modulation - DSBSC (Dual side Band Suppressed Carrier).
 <p align="center">
   <img src="images/tran1.png"></br>
@@ -192,7 +191,7 @@ Refer to the netlist of the circuits here: <a href='/Netlist'>Netlist</a>
 
 # Observations:
 
-The output is fairly linear with respect to both the inputs within the range -1V to +1V. The circuit functions as expected even with frequencies ranging in the order of Gigahertz. A tradeoff exists between the overall gain obtained and the linearity of the circuit with respect to each input.
+The output is fairly linear with respect to both the inputs within the range -1V to +1V. The circuit functions as expected even with frequencies ranging in the order of hundreds of Megahertz. A tradeoff exists between the overall gain obtained and the linearity of the circuit with respect to each input.
 
 # Author:
 • Salai Pragadeshwaran B, B.Tech(ECE), National Institute of Technology, Trichy-620015.
