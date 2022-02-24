@@ -64,13 +64,21 @@ two inputs.
 
 # Attenuator:
 
-A PMOS transistor in the common source configuration with a diode connected NMOS transistor can be used either as an amplifier or attenuator by appropriately varying the device aspect ratio. The configuration is followed by a NMOS source follower. The gain of the given configuration is:
+A PMOS transistor in the common source configuration with a diode connected NMOS transistor can be used either as an amplifier or attenuator by appropriately varying the device aspect ratio. The configuration is followed by a NMOS source follower.
+
+<p align="center">
+<img width="400"
+  src="images/att_circuit.png"></br>
+  Fig. 3: Attenuator Circuit
+</p>
+
+The gain of the given configuration is:
 
 <p align="center">
   <img src="/latex/att.png" />
 </p>
 
-This gain formula is valid even for fairly large voltage swings at the input.
+This gain formula is valid even for fairly large voltage swings at the input. For attenuation, the denominator term must be greater than the numerator term and this can be achieved by making the aspect ratio of the NMOS device larger than that of the PMOS device.
 
 # Tools Used:
 
