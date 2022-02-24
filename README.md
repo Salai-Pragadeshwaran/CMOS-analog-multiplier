@@ -131,6 +131,9 @@ This gain formula is valid even for fairly large voltage swings at the input. Fo
 • <a href='https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/'>Cloud Based Analog IC Design Hackathon</a></br>
 • <a href='https://www.synopsys.com/'>Synopsys India</a></br>
 • <a href='https://www.vlsisystemdesign.com/'>VLSI System Design (VSD) Corp. Pvt. Ltd India</a></br>
+• <a href='kunalpghosh@gmail.com'>Kunal Ghosh</a></br>, Co-founder, VSD Corp. Pvt. Ltd.
+• Chinmay panda, IIT Hyderabad
+• Sameer Durgoji, NIT Karnataka
 
 # References:
 [1] B. Gilbert, “A high-performance monolithic multiplier using active
