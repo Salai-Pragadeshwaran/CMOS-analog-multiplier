@@ -128,7 +128,7 @@ This gain formula is valid even for fairly large voltage swings at the input. Fo
 • Salai Pragadeshwaran B, B.Tech(ECE), National Institute of Technology, Trichy-620015.
 
 # Acknowledgements:
-• <a href='kunalpghosh@gmail.com'>Kunal Ghosh</a>, Co-founder, VSD Corp. Pvt. Ltd.</br>
+• Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.</br>
 • <a href='https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/'>Cloud Based Analog IC Design Hackathon</a></br>
 • <a href='https://www.synopsys.com/'>Synopsys India</a></br>
 • <a href='https://www.vlsisystemdesign.com/'>VLSI System Design (VSD) Corp. Pvt. Ltd India</a></br>
