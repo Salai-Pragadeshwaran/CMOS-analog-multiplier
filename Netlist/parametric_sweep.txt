@@ -1,0 +1,104 @@
+*  Generated for: PrimeSim
+*  Design library name: sp_multiplier
+*  Design cell name: mul_tb2
+*  Design view name: schematic
+.lib 'saed32nm.lib' TT
+
+*Custom Compiler Version S-2021.09
+*Thu Feb 24 07:38:38 2022
+
+.global gnd! vdd!
+********************************************************************************
+* Library          : sp_multiplier
+* Cell             : activeatt1
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt activeatt1 vdd vin vout vss vt_bulk_n_gnd! vt_bulk_p_vdd!
+xm2 vdd net4 vout vt_bulk_n_gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm1 net4 net4 vss vt_bulk_n_gnd! n105 w=0.3u l=0.03u nf=1 m=1
+xm3 net4 vin vdd vt_bulk_p_vdd! p105 w=0.1u l=0.03u nf=1 m=1
+.ends activeatt1
+
+********************************************************************************
+* Library          : sp_multiplier
+* Cell             : gilbert1
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt gilbert1 i_out1 i_out2 i_tail xin1 xin2 yin1 yin2 vt_bulk_n_gnd!
+xm5 net23 yin2 i_tail vt_bulk_n_gnd! n105 w=3.5u l=0.03u nf=1 m=1
+xm4 net20 yin1 i_tail vt_bulk_n_gnd! n105 w=3.5u l=0.03u nf=1 m=1
+xm3 i_out2 xin1 net23 vt_bulk_n_gnd! n105 w=3u l=0.03u nf=1 m=1
+xm2 i_out1 xin2 net23 vt_bulk_n_gnd! n105 w=3u l=0.03u nf=1 m=1
+xm1 i_out2 xin2 net20 vt_bulk_n_gnd! n105 w=3u l=0.03u nf=1 m=1
+xm0 i_out1 xin1 net20 vt_bulk_n_gnd! n105 w=3u l=0.03u nf=1 m=1
+.ends gilbert1
+
+********************************************************************************
+* Library          : sp_multiplier
+* Cell             : mul1
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt mul1 iout1 iout2 rbias vdd vss x1 x2 y1 y2 vt_bulk_n_gnd! vt_bulk_p_vdd!
+xi3 vdd y1 net39 vss vt_bulk_n_gnd! vt_bulk_p_vdd! activeatt1
+xi2 vdd y2 net40 vss vt_bulk_n_gnd! vt_bulk_p_vdd! activeatt1
+xi1 vdd x2 net81 vss vt_bulk_n_gnd! vt_bulk_p_vdd! activeatt1
+xi0 vdd x1 net87 vss vt_bulk_n_gnd! vt_bulk_p_vdd! activeatt1
+xi4 iout1 iout2 net77 net87 net81 net40 net39 vt_bulk_n_gnd! gilbert1
+xm13 rbias rbias vss vt_bulk_n_gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm15 net77 rbias vss vt_bulk_n_gnd! n105 w=3u l=0.03u nf=1 m=1
+xm9 net39 rbias vss vt_bulk_n_gnd! n105 w=0.2u l=0.03u nf=1 m=1
+xm8 net40 rbias vss vt_bulk_n_gnd! n105 w=0.2u l=0.03u nf=1 m=1
+xm7 net77 rbias vss vt_bulk_n_gnd! n105 w=3u l=0.03u nf=1 m=1
+xm6 net81 rbias vss vt_bulk_n_gnd! n105 w=0.2u l=0.03u nf=1 m=1
+xm5 net87 rbias vss vt_bulk_n_gnd! n105 w=0.2u l=0.03u nf=1 m=1
+.ends mul1
+
+********************************************************************************
+* Library          : sp_multiplier
+* Cell             : mul_tb2
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 vout1 vout2 net3 net2 gnd! net8 net10 viny net1 gnd! vdd! mul1
+v3 net8 net10 dc='x'
+v2 viny net1 dc='y'
+v1 net2 gnd! dc=1.8
+r10 net2 net3 r=10k
+r6 net2 vout2 r=1k
+r5 net2 vout1 r=1k
+
+
+
+
+
+
+
+
+.dcOP
+
+.option primesim_remove_probe_prefix = 0
+.probe v(*) i(*) level=1
+.probe dc v(vout1) v(vout2)
+
+.temp 25
+
+
+
+.option primesim_output=wdf
+
+
+.option parhier = LOCAL
+
+
+
+
+
+
+.end
