@@ -10,9 +10,9 @@ This repository presents the design of Four-Quadrant CMOS Analog Multiplier base
  * [Attenuator](#Attenuator)
  * [Circuit Diagram](#Circuit-Diagram)
  * [Tools Used](#Tools-Used)
- * [Pre-Layout Schematics and Simulations](#Pre-Layout-Schematics-and-Simulations)
- * [Netlist of the Circuit](#Netlist-of-the-Circuit)
+ * [Pre-Layout Schematics](#Pre-Layout-Schematics)
  * [Simulation](#Simulation)
+ * [Netlist of the Circuit](#Netlist-of-the-Circuit)
  * [Observations](#Observations)
  * [Author](#Author)
  * [Acknowledgements](#Acknowledgements)
@@ -119,11 +119,9 @@ This gain formula is valid even for fairly large voltage swings at the input. Fo
 <b>• Krita:</b></br>
 &emsp;Digital hand-drawn circuit diagrams used for illustration were made using Krita graphics editor.
 
-# Pre-Layout Schematics and Simulations:
+# Pre-Layout Schematics:
 
-## Schematics:
-
-### Gilbert Cell:
+## Gilbert Cell:
 
 <p align="center">
   <img width="600" src="images/gilbert_cell_schematic.png"></br>
@@ -134,7 +132,7 @@ This gain formula is valid even for fairly large voltage swings at the input. Fo
   Fig. 6: Gilbert Cell Symbol
 </p>
 
-### Attenuator:
+## Attenuator:
 
 The lengths of all transistors are 0.03um. The width of the diode connected NMOS device (0.3um) is greater than the width of the PMOS device(0.1um) which makes this circuit function as an attenuator.
 
@@ -147,7 +145,7 @@ The lengths of all transistors are 0.03um. The width of the diode connected NMOS
   Fig. 8: Attenuator Symbol
 </p>
 
-### Multiplier:
+## Multiplier:
 
 The transistors in the schematic shown in Fig. 9 work as current mirrors and provide bias currents to other blocks in the circuit.
 
@@ -160,18 +158,16 @@ The transistors in the schematic shown in Fig. 9 work as current mirrors and pro
   Fig. 10: Multiplier Symbol
 </p>
 
-### Circuit for Testing:
+## Circuit for Testing:
 Two of the resistors are used in converting the output differential current into differential voltage. The other resistor is used to set the bias current for the circuit.
 <p align="center">
   <img src="images/testbench_schematic.png"></br>
   Fig. 11: Schematic for the testbench
 </p>
 
-# Netlist of the Circuit:
-
 # Simulation:
 
-### Transient Analysis:
+## Transient Analysis:
 After creating and saving the schematic go to 'Tools' and open 'Primewave' to start the simulation. In the Primewave select the 'model file' i.e the '28nm PDK's .lib file presentin the HSPICE folder. After this select the 'tran' analysis in the analysis window and give the 'Start', 'Stop', and 'Step Size' parameters and save it. Then add the outputs which needs to be plotted by selecting the nets on the schematic.</br>
 Two sine waves of different frequencies are being used as inputs. The output wave form is the multiplication of the two sine waves. This waveform can also be considered as Amplitude modulation - DSBSC (Dual side Band Suppressed Carrier).
 <p align="center">
@@ -183,12 +179,14 @@ Two sine waves of different frequencies are being used as inputs. The output wav
   Fig. 13: Multiplication of two Sine Waves.
 </p>
 
-### Parametric Sweep:
+## Parametric Sweep:
 This is used to plot any output attribute over varying input attribute. Here, both the inputs are being varied from -1.5V to +1.5V and the outputs have been plotted.
 <p align="center">
   <img src="images/transfer_char.png"></br>
   Fig. 14: Transfer Characteristics of the Multiplier.
 </p>
+
+# Netlist of the Circuit:
 
 # Observations:
 
