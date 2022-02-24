@@ -62,6 +62,8 @@ two inputs.
   Fig. 2: MOS Gilbert Cell
 </p>
 
+Voltage Vx determines the tail current for each of the differential pairs stacked above (M3-M4 and M5-M6). Differential current in M3-M4 and M5-M6 is determined by the input voltage signal Vy. Currents of M3 and M5 are summed up to produce I1 and currents of M4 and M6 are summed up to produce I2. The differential current (I1-I2) is therefore made a function of both Vx and Vy (approximated as the scaled product of Vx and Vy under small signal conditions). This current can then be passed into a pair of resistors to sense them as a differential voltage.
+
 # Attenuator:
 
 A PMOS transistor in the common source configuration with a diode connected NMOS transistor can be used either as an amplifier or attenuator by appropriately varying the device aspect ratio. The configuration is followed by a NMOS source follower.
