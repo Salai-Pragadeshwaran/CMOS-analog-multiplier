@@ -23,12 +23,12 @@ This repository presents the design of Four-Quadrant CMOS Analog Multiplier base
 Bipolar version of the Gilbert cell [1] has been
 successfully used for many years in the form of analog
 multipliers. Replacing the Bipolar Junction Transistors with
-MOSFETs heavily limits the range of the differential input
+MOSFETs heavily limit the range of the differential input
 signals. This is because the output current of the MOS
 differential pair depends non-linearly on the tail bias current
 and the input signal. The MOS analog multiplier is however
 an extremely useful circuit in integrated VLSI systems. In
-this design an attempt has been made to increase the input
+this design, an attempt has been made to increase the input
 range of the signal swing by employing attenuating stages
 which reduce the input signal levels before giving the input
 into the Gilbert cell stage.
@@ -63,7 +63,7 @@ The equation is valid as long as,
 
 Beyond which the complete tail current will flow in either of the MOSFETs.
 
-For a small signal Vx the differential output current can be approximated to be linear with Vx. Therefore, this circuit can be considered as a current steering circuit.
+For a small signal Vx, the differential output current can be approximated to be linear with Vx. Therefore, this circuit can be considered as a current steering circuit.
 
 # Gilbert Cell:
 
