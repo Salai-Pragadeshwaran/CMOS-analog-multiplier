@@ -191,7 +191,7 @@ Refer to the netlist of the circuits here: <a href='/Netlist'>Netlist</a>
 
 # Observations:
 
-The output is fairly linear with respect to both the inputs within the range -1V to +1V. The circuit functions as expected even with frequencies ranging in the order of hundreds of Megahertz. A tradeoff exists between the overall gain obtained and the linearity of the circuit with respect to each input.
+The output is fairly linear with respect to both the inputs within the range -1V to +1V. The circuit functions as expected even with frequencies ranging in the order of hundreds of Megahertz. A tradeoff exists between the overall gain obtained and the linearity of the circuit with respect to each input. Output signal amplitudes depend on the load resistances and can be futher amplified by placing another differential stage for gain.
 
 # Author:
 • Salai Pragadeshwaran B, B.Tech(ECE), National Institute of Technology, Trichy-620015.
