@@ -188,12 +188,12 @@ This is used to plot any output attribute over varying input attribute. Here, bo
 ## Results with 250kohm Loads:
 <p align="center">
   <img src="images/tran3.png"></br>
-  Fig. 12: Multiplication of two Sine Waves.
+  Fig. 15: Multiplication of two Sine Waves.
 </p>
 
 <p align="center">
   <img src="images/transfer_char2.png"></br>
-  Fig. 14: Transfer Characteristics of the Multiplier.
+  Fig. 16: Transfer Characteristics of the Multiplier.
 </p>
 
 # Netlist of the Circuit:
