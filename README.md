@@ -102,7 +102,7 @@ This gain formula is valid even for fairly large voltage swings at the input. Fo
 <p align="center">
 <img 
   src="images/full_circuit.png"></br>
-  Fig. 4: Circuit Diagram
+  Fig. 4: Reference Circuit Diagram
 </p>
 
 # Tools Used:
