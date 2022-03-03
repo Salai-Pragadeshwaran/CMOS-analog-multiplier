@@ -1,7 +1,7 @@
 
 # Four-Quadrant CMOS Analog Multiplier
 
-This repository presents the design of Four-Quadrant CMOS Analog Multiplier based on Gilbert Cell implemented using Synopsis Custom Compiler on 28nm CMOS Technology as a part of <a href='https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/'>Cloud Based Analog IC Design Hackathon</a>.
+This <a href='https://github.com/Salai-Pragadeshwaran/CMOS-analog-multiplier'>repository</a> presents the design of Four-Quadrant CMOS Analog Multiplier based on Gilbert Cell implemented using Synopsis Custom Compiler on 28nm CMOS Technology as a part of <a href='https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/'>Cloud Based Analog IC Design Hackathon</a>.
 
 # Table of Contents
  * [Introduction](#Introduction)
